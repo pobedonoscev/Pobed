@@ -1,0 +1,28 @@
+@import fonts
+
+// Шрифты
+@mixin font
+	font-size: 16px
+	font-weight: 400
+	font-family: "Roboto-Light", sans-serif
+	color: $colorGraphite
+
+// Запретить перетаскивание
+@mixin user-drag
+	-webkit-user-drag: none
+	-moz-user-drag: none
+	-ms-user-drag: none
+	user-drag: none
+
+// Запретить выделение
+@mixin user-select
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+
+	// Центр по горизонтали и вертикали
+@mixin center
+	display: flex
+	align-items: center
+	justify-content: center

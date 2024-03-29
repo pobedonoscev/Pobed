@@ -1,0 +1,63 @@
+// открыть меню
+.menu-open
+	-webkit-animation: menu-open 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+	animation: menu-open 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+
+@keyframes menu-open
+	0%
+		-webkit-transform: translateX(300px)
+		transform: translateX(300px)
+
+	100%
+		-webkit-transform: translateX(0)
+		transform: translateX(0)
+
+// закрыть меню
+.menu-close
+	-webkit-animation: menu-close 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+	animation: menu-close 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+
+@keyframes menu-close
+	0%
+		-webkit-transform: translateX(0)
+		transform: translateX(0)
+
+	100%
+		-webkit-transform: translateX(400px)
+		transform: translateX(400px)
+
+// добавить затемнение
+.shadow-open
+	-webkit-animation: shadow-open 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+	animation: shadow-open 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+
+@keyframes shadow-open
+	0%
+		display: none
+		opacity: 0
+
+	1%
+		display: flex
+		opacity: 0
+
+	100%
+		display: flex
+		opacity: 0.4
+
+// убрать затемнение
+.shadow-close
+	-webkit-animation: shadow-close 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+	animation: shadow-close 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+
+@keyframes shadow-close
+	0%
+		display: flex
+		opacity: 0.4
+
+	1%
+		display: none
+		opacity: 0.4
+
+	100%
+		display: none
+		opacity: 0

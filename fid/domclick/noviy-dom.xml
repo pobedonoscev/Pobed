@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<complexes>
+	<complex>
+	
+		<id>116482</id>
+		<name>ЖК "Новый Дом"</name>
+		<latitude>57.646948</latitude>
+		<longitude>39.971652</longitude>
+		<address>Ярославская обл., Ярославский район, Заволжское сельское поселение, пос. Красный Бор, ул. Энергетиков, д. 10</address>
+	
+		<images>
+			<image>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/noviy-dom/renders/1.jpg</image>
+			<image>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/noviy-dom/renders/2.jpg</image>
+			<image>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/noviy-dom/renders/3.jpg</image>
+			<image>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/noviy-dom/renders/4.jpg</image>
+			<image>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/noviy-dom/renders/5.jpg</image>
+			<image>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/noviy-dom/renders/6.jpg</image>
+			<image>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/noviy-dom/renders/7.jpg</image>
+		</images>
+
+		<videos>
+			<video>
+				<type>youtube</type>
+				<url>https://www.youtube.com/watch?v=UD7ala0nu8E</url>
+			</video>
+		</videos>
+
+		<buildings>
+			<building>
+				<id>166124</id>
+				<fz_214>true</fz_214>
+				<name>Строение № ...</name>
+				<floors>5</floors>
+				<building_state>ready</building_state>
+				<built_year>2022</built_year>
+				<ready_quarter>2</ready_quarter>
+				<building_type>кирпичный</building_type>
+				<flats>
+	
+				</flats>
+			</building>
+		</buildings>
+	
+		<description_main>
+			<title>Жилой комплекс Новый Дом</title>
+			<text>Пятиэтажный жилой дом на улице Папанина, построенный и введенный в эксплуатацию в 2022-2023 годах. Отличается благородными фасадами из дагестанского камня, большим количеством парковочных мест у дома, а также потрясающим видом на сосновый бор.</text>
+		</description_main>
+	
+		<sales_info>
+			<sales_phone>+74852333362</sales_phone>
+			<sales_address>г. Ярославль, пл. Труда, д. 1, оф. 605</sales_address>
+			<sales_latitude>57.627234</sales_latitude>
+			<sales_longitude>39.866307</sales_longitude>
+			<timezone>+3</timezone>
+			<work_days>
+	
+				<work_day>
+					<day>пн</day>
+					<open_at>09:00</open_at>
+					<close_at>18:00</close_at>
+				</work_day>
+		
+				<work_day>
+					<day>вт</day>
+					<open_at>09:00</open_at>
+					<close_at>18:00</close_at>
+				</work_day>
+		
+				<work_day>
+					<day>ср</day>
+					<open_at>09:00</open_at>
+					<close_at>18:00</close_at>
+				</work_day>
+		
+				<work_day>
+					<day>чт</day>
+					<open_at>09:00</open_at>
+					<close_at>18:00</close_at>
+				</work_day>
+		
+				<work_day>
+					<day>пт</day>
+					<open_at>09:00</open_at>
+					<close_at>18:00</close_at>
+				</work_day>
+		
+			</work_days>
+		</sales_info>
+	
+		<developer>
+			<id></id>
+			<name>Застройщик</name>
+			<phone>+74852333362</phone>
+			<site>победоносцев.рф</site>
+			<logo>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/logo.svg</logo>
+		</developer>
+	
+	</complex>
+</complexes>
+	

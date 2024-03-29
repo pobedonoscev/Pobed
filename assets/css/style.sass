@@ -1,0 +1,2887 @@
+@import mixins
+@import map
+@import animation
+
+@font-face
+	font-family: "bingo"
+	src: url('bingo.eot')
+	src: local('bingo')
+	src: url('bingo.svg#bingo') format('svg')
+	src: url('bingo.otf') format('opentype')
+
+$colorWhite: #fff // белый
+$colorGrey: #f5f5f5 // серый
+$colorGreyTwo: #ebebeb // серый
+$colorGraphite: #282828 // графитовый
+
+$screen-width: 100vw // Ширина экрана
+$screen-height: 100vh // Высота экрана
+$screen-container: 1320px // Ширина контейнера
+
+*,
+*::before,
+*::after
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	list-style: none
+
+// Цвет выделенного текста
+::selection
+	background: #474a51
+	color: #fff
+::-moz-selection
+	background: #474a51
+
+.indent
+	margin-bottom: 150px
+
+	@media (min-width: 768px)
+		margin-bottom: 200px
+
+	@media (min-width: 1400px)
+		margin-bottom: 190px
+
+#map
+	width: 100%
+	height: 100%
+	padding: 0
+	margin: 0
+
+video
+	z-index: 2
+
+.d-none
+	display: none !important
+
+body
+	position: relative
+	@include font
+
+	@media (min-width: 1200px)
+		font-size: 18px
+
+a
+	text-decoration: none
+	font-size: 16px
+
+	@media (min-width: 1200px)
+		font-size: 18px
+
+	&:hover,
+	&:visited,
+	a:active
+		text-decoration: none
+
+p
+	@include font
+	color: #c2c2c2
+	@media (min-width: 1200px)
+		font-size: 18px
+	&:not(:last-child)
+		margin-bottom: 20px
+		@media (min-width: 576px)
+			margin-bottom: 30px
+
+h1, h2, h3, h4, h5, h6
+	margin-bottom: 0
+	@include font
+	font-family: "Roboto-Regular", sans-serif
+	line-height: normal
+
+h1, h2
+	font-size: 30px
+
+	@media (min-width: 1400px)
+		font-size: 60px
+
+	&.right
+		@media (min-width: 1400px)
+			text-align: end
+
+h3
+	font-size: 25px
+	@media (min-width: 768px)
+		font-size: 30px
+	@media (min-width: 1400px)
+		font-size: 40px
+
+h4
+	font-size: 20px
+
+	@media (min-width: 576px)
+		font-size: 20px
+	@media (min-width: 768px)
+		font-size: 20px
+	@media (min-width: 992px)
+		font-size: 25px
+	@media (min-width: 1200px)
+		font-size: 30px
+	@media (min-width: 1400px)
+		font-size: 35px
+
+h5
+	font-size: 25px
+
+.hide
+	display: none !important
+
+.hidden
+	opacity: 0
+	transition: none
+
+input
+	output: none
+
+// Убираем стрелочки у input number
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button
+	-webkit-appearance: none
+	margin: 0
+input[type="number"]
+	-moz-appearance: textfield
+	font-family: "Roboto-Light", sans-serif
+	font-size: 16px
+	@media (min-width: 1200px)
+		font-size: 18px
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked,
+input[type="radio"]:focus
+	box-shadow: none
+
+.owl-carousel
+	& .owl-dots
+		display: flex
+		justify-content: center
+		& .owl-dot
+			width: auto
+
+ol
+	margin-left: 60px
+	padding: 0 30px 20px
+	counter-reset: item
+	list-style: none
+	padding-left: 0
+
+	& li
+		counter-increment: item
+		margin-bottom: 10px
+
+	& li::before
+		content: counter(item) "."
+		margin-right: 10px
+
+.caps
+	text-transform: uppercase
+
+.bold
+	font-weight: bold
+	display: inline
+
+.dnone
+	display: none
+
+img
+	display: block
+	max-width: 100%
+	@include user-drag
+	@include user-select
+
+.bgshka
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	object-fit: cover
+	z-index: -1
+
+	/* Этот код позволит сохранить соотношение сторон 16:9 для видео */
+	&::after
+		content: ""
+		display: block
+		padding-top: 56.25%
+
+.pc
+	@media (max-width: 1399.98px)
+		display: none
+
+.phone
+	@media (min-width: 768px)
+		display: none
+
+.absolute
+	position: absolute !important
+
+.relative
+	position: relative !important
+
+.mb0
+	margin-bottom: 0 !important
+.mb10
+	margin-bottom: 10px
+.mb20
+	margin-bottom: 20px
+.mb30
+	margin-bottom: 30px
+.mb50
+	margin-bottom: 30px !important
+	@media (min-width: 768px)
+		margin-bottom: 50px !important
+.mb70
+	margin-bottom: 70px
+.mb100
+	margin-bottom: 100px
+.mb150
+	margin-bottom: 150px
+.p30
+	padding: 0 30px 0 0
+.rg30
+	row-gap: 30px
+.p30
+	padding: 30px
+
+.mt20
+	margin-top: 20px
+.mt50
+	margin-top: 50px
+.m20
+	margin: 20px
+.mtb20
+	margin: 20px 0
+.m1020
+	margin: 10px 20px
+
+.grey
+	background-color: $colorGrey
+
+// Убираем лишнее в Я.Картах
+[class*="copyrights-pane"]
+	display: none !important
+[class*="ground-pane"]
+	filter: grayscale(1)
+
+.accordion-one
+	display: flex
+	flex-direction: column
+	row-gap: 15px
+
+	& .accordion-header
+		display: inline-flex
+		gap: 10px
+		cursor: pointer
+		user-select: none
+
+		&:hover svg
+			rotate: 90deg
+
+	&	.accordion-content
+		max-height: 0
+		opacity: 0
+		overflow: hidden
+		transition: max-height 0.6s ease, opacity 0.6s ease
+
+		.accordion-indent
+			padding: 20px 0 30px 0
+			@media (min-width: 768px)
+				padding: 20px 0 30px 100px
+
+	&	.accordion-content.active
+		max-height: 500px
+		opacity: 1
+
+// контейнер плоских картинок
+.preview-picture
+	border-radius: 10px
+	overflow: hidden
+	height: 300px
+	& img
+		object-fit: cover
+		height: 100%
+		width: 100%
+
+.accordion-two
+	width: 100%
+
+	& ul
+		margin-left: 60px
+		padding: 0 30px 20px
+		counter-reset: item
+		list-style: none
+		padding-left: 0
+
+		& li
+			counter-increment: item
+			margin-bottom: 10px
+
+		& li::before
+			content: "●"
+			margin-right: 10px
+
+	& .accordion-item
+		background-color: #f7f7f7
+		margin-bottom: 20px
+		border-radius: 10px
+		user-select: none
+
+	& .accordion-header
+		display: flex
+		align-items: center
+		justify-content: space-between
+		gap: 30px
+		background-color: #f7f7f7
+		padding: 32px
+		cursor: pointer
+		border-radius: 10px
+
+	& .accordion-title
+		font-weight: bold
+
+	& .accordion-toggle
+		width: 10px
+		height: 10px
+		aspect-ratio: 1
+		background-color: #f3f3f3
+		border-radius: 50%
+		transition: transform 0.3s ease
+
+	& .accordion-toggle.open
+		transform: rotate(180deg)
+		background-color: #282828
+
+	& .accordion-content
+		overflow: hidden
+		max-height: 0
+		transition: max-height 0.3s ease
+
+		& a
+			background-color: #282828
+			color: #fff
+			padding: 0 3px
+
+		& p
+			padding: 0 30px 20px
+			margin-bottom: 0
+
+		&.open
+			max-height: 900px
+
+	& .accordion-item:hover .accordion-toggle
+		background-color: #282828
+		transition: background-color 0.6s ease
+
+.abutton
+	display: flex
+	align-items: flex-end
+	justify-content: flex-end
+
+.buttons
+	display: flex
+	gap: 20px
+	// margin-bottom: 30px
+
+.content-block
+	display: none
+	// padding: 20px
+	// border: 1px solid #dedede
+	margin-top: 20px
+	border-radius: 10px
+	margin-bottom: 50px
+
+	&.active
+		display: block
+
+#apartment-mortgage
+	& .buttons
+		justify-content: end
+		margin-bottom: 30px
+
+button, nav, .button
+	color: #ffffff
+	display: flex
+	align-items: center
+	justify-content: center
+	border: 1px solid rgb(215, 215, 215)
+	border-radius: 10px
+	padding: 0px 15px
+	height: 50px
+	width: 100%
+	transition: .3s
+	cursor: pointer
+	font-family: "Roboto-Light", sans-serif
+	font-size: 18px
+	font-weight: 400
+	user-select: none
+
+	@media (min-width: 576px)
+		width: auto
+
+	&:hover
+		background-color: #f7f7f7
+		border: 1px solid #f7f7f7
+		color: #282828
+		fill: #282828
+
+	&.graphite
+		background-color: #282828
+		border: 1px solid #282828
+		color: #fff !important
+		fill: #fff !important
+		&:hover
+			box-shadow: 0px 5px 10px 0px rgba(46, 46, 46, 0.3)
+
+	&.gray
+		background-color: #f7f7f7
+		border: 1px solid #f7f7f7
+		color: #000 !important
+		fill: #000 !important
+		&:hover
+			background-color: #e0e0e0
+			border: 1px solid #e0e0e0
+
+	svg
+		height: 18px
+	&.sold
+		background-color: #e0e0e0
+		border: 1px solid #e0e0e0
+	&.available
+		background-color: #d04d28
+		border: 1px solid #d04d28
+		color: #fff
+	&.booked
+		background-color: #e0e0e0
+		border: 1px solid #e0e0e0
+	&.not-active
+		background-color: #fff
+		border: 1px solid #dedede
+		color: #dedede
+		cursor: auto
+		path
+			stroke: #dedede
+
+.index-button
+	position: absolute
+	bottom: 30px
+	left: 30px
+	right: 30px
+
+header
+	width: 100%
+	height: 130px
+	z-index: 3
+	margin-bottom: 30px
+	@media (min-width: 768px)
+		margin-bottom: 50px
+	@media (min-width: 1400px)
+		height: 120px
+
+	&.h-fixed
+		position: fixed
+		top: 0
+		left: 50%
+		transform: translateX(-50%)
+		display: flex
+		justify-content: center
+		background-color: #fff
+
+	&.h-fixed, &.h-relative
+		// полоска под меню
+		&::after
+			content: ""
+			position: absolute
+			bottom: 0
+			height: 1px
+			background-color: #282828
+			width: 100%
+
+	&.h-absolute
+		position: absolute
+		& .logotipe
+			@media (min-width: 1400px)
+				color: #fff
+
+	&.h-relative
+		position: relative
+		padding: 0
+		width: auto
+
+	&.m-relative
+		@media (max-width: 1399.98px)
+			position: relative
+
+	& .shapka
+		height: 100%
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+	&.gradient
+		@media (min-width: 1400px)
+			background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.15), rgba(0,0,0,0))
+
+	@media (max-width: 767.98px)
+		& .list-button
+			& a.button.graphite
+				display: none
+
+	& .logotipe
+		height: 50px
+		font-size: 25px
+
+	& .list-button
+		display: flex
+		gap: 20px
+
+main
+	background-color: $colorWhite
+	position: relative
+	z-index: 1
+
+section, article, aside
+	position: relative
+	margin-bottom: 70px
+	@media (min-width: 768px)
+		margin-bottom: 150px
+
+.footer
+	margin-bottom: 30px
+	@media (min-width: 768px)
+		margin-bottom: 50px
+	& a
+		color: #282828
+		transition: color 0.3s ease
+		& svg
+			transition: fill 0.3s ease
+			margin-left: 5px
+			height: 12px
+			fill: #c2c2c2
+			& a:hover svg
+				fill: #282828
+		&:hover
+			color: #282828
+			& svg
+				fill: #282828
+	& .kolbasa
+		background-color: #f7f7f7
+		color: #282828
+		padding: 30px
+		border-radius: 10px
+		display: flex
+		margin-bottom: 30px
+		justify-content: space-between
+		gap: 30px
+		& .item
+			display: flex
+			flex-direction: column
+			gap: 30px
+			& .official-pages
+				display: flex
+				flex-direction: column
+			& .micro-text
+				display: flex
+				flex-direction: column
+				font-size: 13px
+				color: #c2c2c2
+			& .title
+				display: flex
+				flex-direction: column
+				row-gap: 10px
+				& .legal
+					display: flex
+					flex-direction: column
+				& .block
+					display: flex
+					flex-direction: column
+					row-gap: 5px
+					& .social-networks
+						display: flex
+						gap: 10px
+						& svg
+							fill: #fff
+							height: 30px
+							padding: 5px
+							border-radius: 50%
+							transition: background-color 0.3s ease
+							&.vkontakte
+								background-color: #07f
+								&:hover
+									background-color: #268bff
+							&.whatsapp
+								background-color: #65bc54
+								&:hover
+									background-color: #7cc66d
+							&.viber
+								background-color: #7b519d
+								&:hover
+									background-color: #8f6bac
+							&.telegram
+								background-color: #64a9dc
+								&:hover
+									background-color: #7bb6e1
+			@media (max-width: 767.98px)
+				&:nth-child(4)
+					display: none
+			@media (max-width: 991.98px)
+				&:nth-child(1)
+					display: none
+		@media (max-width: 767.98px)
+			flex-direction: column
+
+	& .copyright
+		display: flex
+		justify-content: space-between
+		gap: 50px
+		font-size: 13px
+
+		& a
+			font-size: 13px
+			color: #c7c7c7
+			&:hover
+				color: #282828
+			&.logotipe
+				font-size: 18px !important
+
+		& .item
+			color: #c7c7c7
+			& .text
+				color: #c7c7c7
+				font-size: 12px
+				margin-bottom: 0px
+				@media (min-width: 768px)
+					margin-bottom: 10px
+				& .circumcision
+					@media (max-width: 767.98px)
+						display: none
+			& .bottom-links
+				a:not(:last-child)
+					margin-right: 15px
+				@media (max-width: 767.98px)
+					display: none
+			@media (max-width: 1399.98px)
+				&:first-child, &:last-child
+					display: none
+
+.container
+	width: 100%
+	padding: 0 30px
+	@media (min-width: 1400px)
+		width: 1320px
+		margin: 0 auto
+
+.container-fluid
+	margin: 0
+	padding: 0
+	max-width: 100%
+	display: block
+
+.logotipe
+	display: flex
+	flex-direction: column
+	line-height: 1
+	color: #000
+	@include user-select
+	.pobedonoscev
+		font-family: "Lora", sans-serif
+	.group
+		font-family: "CAL", sans-serif
+		text-transform: uppercase
+
+.heading
+	width: 100%
+	display: flex
+	flex-direction: column
+	row-gap: 10px
+	margin-bottom: 30px
+	& .subtitle
+		& a
+			transition: color 0.3s
+			color: #c7c7c7
+			&:hover
+				color: #282828
+
+	@media (min-width: 1400px)
+		margin-bottom: 50px
+
+	@media (max-width: 767.98px)
+		.subtitle
+			display: none
+			a
+				color: #c7c7c7
+
+.sortorovka
+	margin-bottom: 30px
+	& ul.rooms
+		display: flex
+		justify-content: center
+		gap: 10px
+		& li.zoth
+			border-radius: 10px
+			border: 1px solid #f3f3f3
+			min-height: 50px
+			min-width: 50px
+			padding: 0 20px
+			display: flex
+			align-items: center
+			justify-content: center
+			cursor: pointer
+			box-sizing: border-box
+			-webkit-user-select: none
+			-moz-user-select: none
+			user-select: none
+			&.disabled
+				cursor: inherit
+				background: #fff
+				border: 1px solid #f3f3f3
+				color: #f3f3f3
+
+.list-apartments
+	display: flex
+	flex-direction: column
+	row-gap: 10px
+	margin-bottom: 30px
+	& .apartment
+		display: flex
+		justify-content: space-between
+		border: 1px solid #f3f3f3
+		border-radius: 10px
+		transition: all 0.3s ease-in-out
+		padding: 20px 30px
+		color: #282828
+		font-size: 20px
+		gap: 30px
+		flex-direction: column
+		@media (min-width: 768px)
+			flex-direction: row
+		@media (min-width: 1400px)
+			gap: 50px
+			flex-direction: row
+			align-items: center
+		& .iPlan
+			@media (min-width: 1400px)
+			& img
+				max-height: 80px
+				width: auto
+				@media (min-width: 1400px)
+					transition: all 0.3s ease-in-out
+		&:hover
+			border: 1px solid #282828
+		& .aInfo
+			display: flex
+			gap: 30px
+			flex-direction: column
+			@media (min-width: 768px)
+				flex-direction: row
+			@media (min-width: 1400px)
+				gap: 50px
+			& .general
+				width: 230px
+			& .prices
+				width: 230px
+				& .price
+					display: flex
+					justify-content: space-between
+			& .views
+				display: none
+				@media (min-width: 1400px)
+					display: flex
+					flex-direction: column
+
+.obj-header
+	position: relative
+	@media (min-width: 768px)
+		margin-bottom: 30px
+
+	.ymaps3x0--map-container
+		@media (max-width: 767.98px)
+			border-bottom-right-radius: 0px
+			border-bottom-left-radius: 0px
+
+	.ptr
+		cursor: pointer
+		display: flex
+		gap: 10px !important
+		& svg
+			width: 50px
+			height: 50px
+			fill: #f3f3f3
+			transition: fill 0.3s
+			&:hover
+				fill: #e0e0e0
+
+	.position
+		position: absolute
+		z-index: 1
+		user-select: none
+		display: flex
+		gap: 20px
+		&.tl
+			top: 30px
+			left: 30px
+		&.tr
+			top: 30px
+			right: 30px
+		&.br
+			bottom: 30px
+			right: 30px
+		&.bl
+			bottom: 30px
+			left: 30px
+
+	.obj-header-multimedia
+		width: 100%
+		overflow: hidden
+		position: relative
+		@media (max-width: 767.98px)
+			border-top-left-radius: 0px
+			border-top-right-radius: 0px
+		&:hover img
+			transform: scale(1.05)
+			cursor: pointer
+		& img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			transition: transform 0.5s
+		& video
+			display: block
+			width: 100%
+			height: 315px
+			object-fit: cover
+			border-radius: 10px
+			@media (max-width: 767.98px)
+				border-bottom-left-radius: 0px
+				border-bottom-right-radius: 0px
+
+.position-menu
+	display: flex
+	justify-content: end
+
+.searchBlock
+	display: flex
+	flex-direction: column
+	row-gap: 50px
+
+	.search
+		width: 100%
+		background-color: #fff
+
+		& .container
+			gap: 50px
+
+		& .sorting
+			display: flex
+			flex-flow: row wrap
+			justify-content: center
+			align-items: flex-start
+			gap: 20px
+			width: 100%
+
+			@media (min-width: 1400px)
+				gap: 30px
+
+			& .naming
+				position: relative
+				width: 100%
+
+				@media (min-width: 768px)
+					width: calc(100% / 2 - 10px)
+				@media (min-width: 1400px)
+					width: calc(100% / 6 - 25px)
+
+				& .complex
+					border-radius: 10px
+					border: 1px solid #f3f3f3
+					color: #f3f3f3
+					padding: 0px 15px
+					height: 50px
+					display: flex
+					align-items: center
+					justify-content: space-between
+					cursor: pointer
+					box-sizing: border-box
+					@include user-select
+					gap: 10px
+					& .disabled
+						border: 1px solid #f3f3f3
+						color: #f3f3f3
+						cursor: default
+
+				& svg
+					z-index: 1
+					width: 15px
+
+				& .submenu
+					position: absolute
+					top: 70px
+					left: 0
+					width: 100%
+					background-color: #282828
+					border-radius: 10px
+					color: #fff
+					padding: 20px
+					z-index: 1
+					display: flex
+					flex-direction: column
+
+					&.hidden
+						display: none
+
+					& li
+						padding: 3px
+
+					& li:hover
+						background-color: #fff
+						color: #000
+
+					& li:not(:last-child)
+						margin-bottom: 10px
+
+			& .rooms
+				display: flex
+				gap: 10px
+
+				@media (min-width: 768px)
+					width: calc(100% / 2 - 10px)
+				@media (min-width: 1400px)
+					width: auto
+
+				& .zoth
+					border-radius: 10px
+					border: 1px solid #f3f3f3
+					min-height: 50px
+					min-width: 50px
+					padding: 0 20px
+					display: flex
+					align-items: center
+					justify-content: center
+					cursor: pointer
+					box-sizing: border-box
+					@include user-select
+
+					&.disabled
+						cursor: inherit
+						background: #fff
+						border: 1px solid #f3f3f3
+						color: #f3f3f3
+
+					&.highlighted
+						background: #fff
+
+					&.pushed
+						background: rgb(247, 247, 245)
+						color: #000
+						border: 1px solid rgb(247, 247, 245)
+
+					&.highlighted.pushed
+						background: #282828
+						color: #fff
+						border: 1px solid rgb(240, 240, 240)
+
+			& .price
+				display: flex
+				flex-direction: column
+				gap: 15px
+
+				& .range-slider
+					position: relative
+					width: auto
+
+				& .inputBefore
+					position: relative
+					padding: 16px 20px
+					border-radius: 28px
+					border: 1px solid rgb(215, 215, 215)
+					width: 150px
+					background-color: #fff
+
+					&:focus
+						outline: none
+
+				& .inputRange
+					position: absolute
+					width: 150px
+					top: 60px
+					left: 0
+
+				& .active
+					& input
+						border: 1px solid rgb(247, 247, 245)
+						background-color: rgb(247, 247, 245)
+
+			& .filters-price__inputs
+				display: flex
+				justify-content: space-between
+				position: relative
+				gap: 10px
+
+				&	.filters-price__label
+					display: flex
+					align-items: center
+					gap: 10px
+					width: calc((100vw - 60px) / 2 - 5px)
+					height: 50px
+					padding: 0px 15px
+					border-radius: 10px
+					border: 1px solid #f3f3f3
+
+					@media (min-width: 768px)
+						width: calc( (100vw - 60px) / 2 - 10px)
+					@media (min-width: 1400px)
+						width: calc( 100% )
+
+						& input
+							outline: none
+
+					& .filters_price__text
+						color: #808080
+
+					& .filters-price__input
+						border: none
+						color: #4D4D4D
+
+			& .noUi-horizontal .noUi-handle
+				width: 22px
+				height: 22px
+				top: -11px
+				right: -11px
+
+			& .noUi-target
+				background: #f3f3f3
+				border: none
+				border-radius: 100px
+				box-shadow: none
+				height: 1px
+
+				& .noUi-connect
+					background: #000
+
+				& .noUi-handle
+					box-shadow: none
+					border-radius: 100%
+					background-color: #fff
+					border: 1px solid #f3f3f3
+
+					&:after,
+					&:before
+						display: none
+
+	.apartmentsBlock
+		display: flex
+		flex-direction: column
+		gap: 30px
+
+		.objects
+			display: flex
+			flex-wrap: wrap
+			gap: 30px
+
+			.box
+				border: 1px solid #f3f3f3
+				border-radius: 10px
+				padding: 20px
+				width: calc(100vw - 60px)
+				height: calc(100vw - 60px)
+				display: flex
+				flex-direction: column
+				color: #000
+
+				@media (min-width: 768px)
+					width: calc((100vw - 60px) / 2 - 15px)
+					height: calc((100vw - 60px) / 2 - 15px)
+				@media (min-width: 992px)
+					width: calc((100vw - 60px) / 3 - 20px)
+					height: calc((100vw - 60px) / 3 - 20px)
+				@media (min-width: 1400px)
+					width: calc(100% / 4 - 22.5px)
+					height: calc( ($screen-container - 60px) / 4 - 20px)
+
+				.image
+					display: flex
+					justify-content: center
+					align-items: center
+					flex-grow: 1
+
+					img
+						max-height: 65%
+						max-width: 65%
+
+				.text
+					display: flex
+					justify-content: space-between
+					height: 40px
+
+					.right
+						.bottom
+							display: flex
+							justify-content: flex-end
+
+					.bottom
+						font-size: 14px
+
+	.dn
+		display: none
+	.shellNextButton
+		display: flex
+		justify-content: center
+
+.types-of-activities
+
+	& svg
+		fill: #282828
+		transition: all 0.3s ease
+		width: 15px
+
+.awards-block
+	& .left-block
+		display: none
+		@media (min-width: 768px)
+			display: block
+			max-width: 100%
+		@media (min-width: 1400px)
+			max-width: calc( 100% / 4 )
+	& .list-awards
+		display: flex
+		flex-wrap: wrap
+		gap: 30px
+		@media (min-width: 768px)
+			gap: 50px
+		& svg
+			max-height: 80px
+			border: 1px solid #f3f3f3
+			border-radius: 25px
+			padding: 20px
+			@media (min-width: 768px)
+				padding: 30px
+				max-height: 100px
+			@media (min-width: 1400px)
+				max-height: 150px
+			&#sber-logo
+				fill: #f3f3f3
+				transition: fill 0.3s ease-in-out
+				&:hover
+					fill: #54af32
+					transition: fill 0.3s ease-in-out
+			&#cwa
+				fill: #f3f3f3
+				transition: fill 0.3s ease-in-out
+				&:hover
+					fill: #f9b233
+					transition: fill 0.3s ease-in-out
+			&#top-zhk
+				fill: #f3f3f3
+				transition: fill 0.3s ease-in-out
+				&:hover
+					& .color-1
+						fill: #1d71b8
+						transition: fill 0.3s ease-in-out
+					& .color-2
+						fill: #be1622
+						transition: fill 0.3s ease-in-out
+					& .color-3
+						fill: #282828
+						transition: fill 0.3s ease-in-out
+
+.our-projects
+	& .container
+		display: flex
+		flex-direction: column
+		row-gap: 30px
+		@media (min-width: 1400px)
+			row-gap: 50px
+
+.right-block
+	@media (min-width: 768px)
+		max-width: 60%
+		margin-left: calc( 100% / 3 + 30px )
+	@media (min-width: 1400px)
+		max-width: 50%
+
+.list-obj .item
+	position: relative
+	display: inline-block
+	user-select: none
+	overflow: hidden
+	max-width: 100%
+
+	& .title
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		padding: 50px 0
+		background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5))
+		color: #fff
+		opacity: 0
+		transition: opacity 0.5s
+		text-align: center
+		z-index: 1
+
+		& h3
+			color: #fff
+			font-family: "BebasNeue-Cyrillic", sans-serif
+
+		& span
+			font-size: 14px
+
+	& .awards
+		position: absolute
+		top: 30px
+		right: 30px
+		display: flex
+		flex-wrap: wrap
+		gap: 15px
+		z-index: 1
+
+		& svg
+			width: 50px
+
+	&:hover img
+		transform: scale(1.05)
+
+	&:hover .title
+		opacity: 1
+
+	& img
+		display: block
+		transition: transform 0.5s
+
+.list-banks-two
+	display: flex
+	flex-direction: column
+	row-gap: 30px
+	& a
+		color: #282828
+	& .item
+		border: 1px solid #dedede
+		border-radius: 10px
+		padding: 30px
+		transition: all 0.3s ease
+		display: flex
+		flex-direction: column
+		row-gap: 30px
+		& .heading
+			margin-bottom: 0
+			font-size: 30px
+			font-weight: 100
+		& .information
+			display: flex
+			gap: 50px
+			& .block
+				display: flex
+				flex-direction: column
+				row-gap: 10px
+				&.pc
+					@media (max-width: 991.98px)
+						display: none
+			& .top
+				font-size: 13px
+				color: #c2c2c2
+			& .bottom
+				font-size: 20px
+				font-weight: 900
+				display: flex
+				align-items: center
+				gap: 7px
+				@media (min-width: 768px)
+					font-size: 22px
+					gap: 10px
+				& .bank-logo
+					height: 24px
+					width: 24px
+					@media (min-width: 768px)
+						height: 27px
+						width: 27px
+					&.sber
+						fill: #21A038
+					&.vtb
+						fill: #009FDF
+					&.alfa
+						fill: #EF3124
+					&.open
+						fill: #00BEF0
+				& svg
+					height: 27px
+				& .circle
+					width: 27px
+					height: 27px
+					background-color: #f1f3f3f3
+					border-radius: 50%
+					padding: 3px
+					font-size: 12px
+					display: flex
+					align-items: center
+					justify-content: center
+					transition: all 0.6s ease
+					&:hover
+						background-color: #dddddd
+						color: #282828
+						transition: all 0.6s ease
+		&:hover
+			cursor: pointer
+			border: 1px solid #f7f7f7
+			background-color: #f7f7f7
+
+.list-divisions
+	display: grid
+	gap: 30px
+	@media (max-width: 767.98px)
+		grid-template-rows: repeat(1, 1fr)
+		grid-template-columns: repeat(1, 100%)
+	@media (min-width: 768px)
+		grid-template-rows: repeat(3, 1fr)
+		grid-template-columns: repeat(2, 1fr)
+	@media (min-width: 1400px)
+		grid-template-rows: repeat(2, 1fr)
+		grid-template-columns: repeat(4, 1fr)
+	& .item
+		border: 1px solid #dedede
+		color: #282828
+		border-radius: 10px
+		padding: 30px
+		transition: all 0.3s ease
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		row-gap: 30px
+		position: relative
+		height: 250px
+		user-select: none
+		&:hover
+			border: 1px solid #282828
+			&:nth-child(1)
+				background-color: #e0e0e0
+			& .email svg
+				fill: #282828
+		&:nth-child(1)
+			background-color: #f3f3f3
+			border: 0
+			@media (min-width: 768px)
+				grid-area: 1 / 1 / 1 / 3
+		&:last-child
+			border: 0
+			& img
+				position: absolute
+				top: 0
+				left: 0
+				object-fit: cover
+				height: 100%
+				width: 100%
+				transition: all 0.5s
+				display: block
+				border-radius: 10px
+		& .divisionn
+			font-size: 25px
+			text-transform: uppercase
+		& .email, & .tel
+			display: flex
+			justify-content: end
+			align-items: center
+			& svg
+				transition: fill 0.3s ease
+				margin-left: 5px
+				height: 12px
+				fill: #c2c2c2
+		& .tel
+			flex-direction: column
+			align-items: flex-end
+
+.person
+	padding: 30px
+	border: 1px solid #dedede
+	border-radius: 10px
+	display: flex
+	flex-direction: column
+	gap: 30px
+	color: #282828
+	& .information
+		z-index: 1
+		@media (min-width: 768px)
+			padding: 0 30px
+		& .item
+			display: flex
+			justify-content: space-between
+
+.peoples
+	display: grid
+	grid-column-gap: 30px
+	grid-row-gap: 30px
+	@media (max-width: 767.98px)
+		grid-template-rows: repeat(1, 1fr)
+		grid-template-columns: repeat(1, 100%)
+	@media (min-width: 768px)
+		grid-column-gap: 50px
+		grid-row-gap: 50px
+		grid-template-columns: repeat(7, 1fr)
+		grid-template-rows: repeat(2, 1fr)
+	& .people
+		width: auto
+		transition: all 0.5s ease
+		position: relative
+		padding: 0
+		border: 1px solid #dedede
+		border-radius: 10px
+		&:not(:first-child)
+			height: 300px
+		&:nth-child(1)
+			background-color: #f7f7f7
+			border: 1px solid #f7f7f7
+		@media (min-width: 768px)
+			&:nth-child(1)
+				grid-area: 1 / 1 / 3 / 4
+			&:nth-child(2)
+				grid-area: 1 / 4 / 2 / 6
+			&:nth-child(3)
+				grid-area: 1 / 6 / 2 / 8
+			&:nth-child(4)
+				grid-area: 2 / 4 / 3 / 6
+			&:nth-child(5)
+				grid-area: 2 / 6 / 3 / 8
+		&:hover
+			border: 1px solid #f7f7f7
+			background-color: #f7f7f7
+			& img
+				opacity: 1
+			& .information
+				color: #fff
+		& img
+			filter: saturate(0.8)
+			object-fit: cover
+			width: 100%
+			height: 100%
+			border-radius: 10px
+			@media (min-width: 768px)
+				position: absolute
+				top: 0
+				left: 0
+				transition: all 0.5s ease
+			@media (min-width: 768px)
+				opacity: 0
+		& svg
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -65%)
+			fill: #e0e0e0
+			max-width: 100px
+			z-index: 2
+		& .information
+			width: 100%
+			position: absolute
+			bottom: 30px
+			left: 50%
+			transform: translateX(-50%)
+			z-index: 2
+			display: flex
+			flex-direction: column
+			justify-content: flex-end
+			align-items: center
+			text-align: center
+			color: #fff
+			@media (min-width: 768px)
+				color: #282828
+			& span
+				transition: all 0.5s ease
+				&:first-child
+					font-size: 25px
+				&:last-child
+					font-size: 15px
+					color: #c2c2c2
+
+		&.no-photo
+			&:hover
+				& .information
+					& span
+						&:first-child
+							color: #282828
+				& svg
+					transition: all 0.5s ease
+					opacity: 1
+			& svg
+				transition: all 0.5s ease
+				@media (min-width: 768px)
+					opacity: 0
+
+.butterbrod
+	display: flex
+	flex-direction: column
+	row-gap: 30px
+
+	.dopy
+		display: grid
+		gap: 30px
+		height: 100%
+		font-size: 16px
+		@media (max-width: 767.98px)
+			grid-template-rows: repeat(1, 1fr)
+			grid-template-columns: repeat(1, 100%)
+		@media (min-width: 768px)
+			grid-template-rows: repeat(3, 1fr)
+			grid-template-columns: repeat(2, 1fr)
+		@media (min-width: 1400px)
+			grid-template-rows: repeat(2, 1fr)
+			grid-template-columns: repeat(4, 1fr)
+
+		& .item
+			display: flex
+			row-gap: 20px
+			background-color: #f7f7f7
+			padding: 30px
+			overflow: hidden
+			height: 250px
+
+			border-bottom-right-radius: 10px
+			border-bottom-left-radius: 10px
+			@media (min-width: 768px)
+				border-top-left-radius: 10px
+				border-top-right-radius: 10px
+
+			&:nth-child(1),
+			&:nth-child(3),
+			&:nth-child(4),
+			&:nth-child(5),
+			&:nth-child(6)
+				flex-direction: column
+				justify-content: space-between
+
+			&:nth-child(6)
+				text-align: initial
+				& a
+					color: #282828
+					transition: color 0.3s ease
+					display: block !important
+					& svg
+						transition: fill 0.3s ease
+						margin-left: 5px
+						height: 12px
+						fill: #c2c2c2
+					&:hover
+						& svg
+							fill: #282828
+				& .list
+					align-items: end
+
+			&:nth-child(2),
+			&:nth-child(7)
+				position: relative
+				justify-content: center
+				align-items: flex-end
+				color: #fff
+				background-size: cover
+				fill: #fff
+				user-select: none
+				transition: 0.3s
+				& img
+					position: absolute
+					top: 0
+					left: 0
+					object-fit: cover
+					height: 100%
+					width: 100%
+					transition: all 0.5s
+					display: block
+				& h4
+					font-size: 25px
+					color: #f3f3f3
+					z-index: 1
+					opacity: 0
+					transition: all 0.5s
+					@media (max-width: 1399.98px)
+						opacity: 1
+				& .line
+					opacity: 0
+				&:hover
+					cursor: pointer
+					& img
+						transform: scale(1.05)
+					& h4
+						opacity: 1
+					& .line
+						background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4))
+						z-index: 0
+						width: 100%
+						height: 70%
+						position: absolute
+						bottom: 0
+						left: 0
+						transition: opacity 0.5s
+						opacity: 1
+
+			// ОБЪЕКТ
+			&:nth-child(1)
+				@media (max-width: 1399.98px)
+					display: none
+				@media (min-width: 1400px)
+					grid-area: 1 / 1 / 2 / 2
+
+			// КАРТИНКИ
+			&:nth-child(2)
+				@media (max-width: 767.98px)
+					display: none
+				@media (min-width: 768px)
+					grid-area: 1 / 2 / 1 / 2
+				@media (min-width: 1400px)
+					grid-area: 1 / 2 / 2 / 3
+
+			// ДОМ
+			&:nth-child(3)
+				@media (max-width: 767.98px)
+					display: none
+				@media (min-width: 768px)
+					grid-area: 1 / 1 / 1 / 1
+				@media (min-width: 1400px)
+					grid-area: 1 / 3 / 2 / 4
+
+			// МАФ
+			&:nth-child(4)
+				@media (max-width: 767.98px)
+					display: none
+				@media (min-width: 768px)
+					grid-area: 2 / 2 / 2 / 2
+				@media (min-width: 1400px)
+					grid-area: 1 / 4 / 2 / 5
+
+			// ПЛЮСЫ
+			&:nth-child(5)
+				@media (max-width: 767.98px)
+					display: none
+				@media (min-width: 768px)
+					grid-area: 3 / 1 / 3 / 1
+				@media (min-width: 1400px)
+					grid-area: 2 / 1 / 3 / 2
+
+			// КВАРТИРЫ
+			&:nth-child(6)
+				@media (max-width: 767.98px)
+					grid-area: 1 / 1 / 1 / 1
+				@media (min-width: 768px)
+					grid-area: 3 / 2 / 3 / 2
+				@media (min-width: 1400px)
+					grid-area: 2 / 2 / 3 / 3
+
+			// ХОД СТРОИТЕЛЬСТВА
+			&:nth-child(7)
+				@media (max-width: 767.98px)
+					display: none
+				@media (min-width: 768px)
+					grid-area: 2 / 1 / 2 / 1
+				@media (min-width: 1400px)
+					grid-area: 2 / 3 / 3 / 5
+
+			& .list
+				display: flex
+				flex-direction: column
+				gap: 5px
+				text-align: end
+				& .param
+					display: flex
+					justify-content: space-between
+				& .status
+					display: flex
+					align-items: center
+					gap: 10px
+					& .a, & .b, & .s
+						width: 15px
+						height: 15px
+						border-radius: 5px
+					& .a
+						border: 1px solid #999
+						background-color: #fff
+					& .b
+						border: 1px solid #999
+						background-color: #f3f3f3
+					& .s
+						border: 1px solid #999
+						background-color: #e9bdbd
+
+.muSuperSpisok
+	display: flex
+	flex-direction: column
+	& ul
+		counter-reset: item
+		list-style: none
+		padding-left: 0
+		position: relative
+
+		display: flex
+		flex-direction: column
+		align-items: end
+		& li
+			background-color: #282828
+			color: #fff
+			padding: 4px 7px
+			border-radius: 5px
+			width: fit-content
+			counter-increment: item
+			&::before
+				content: ""
+			&:not(:last-child)
+				margin-bottom: 5px
+
+.butter
+	display: flex
+	flex-direction: column
+	h3
+		margin-bottom: 30px
+	& ul
+		margin-left: 60px
+		counter-reset: item
+		list-style: none
+		padding-left: 0
+		position: relative
+
+		& li
+			background-color: #f3f3f3
+			color: #282828
+			padding: 5px 10px
+			border-radius: 5px
+			width: fit-content
+			counter-increment: item
+			&::before
+				content: "●"
+				position: absolute
+				left: -30px
+			&:not(:last-child)
+				margin-bottom: 10px
+
+	&.noDots
+		& ul
+			margin-left: 0
+			& li
+				&::before
+					content: ""
+
+	& .general-information
+		margin-left: 30px
+		flex-grow: 1
+	& .dopy
+		display: grid
+		gap: 30px
+		grid-template-columns: repeat(1, 1fr)
+		@media (min-width: 768px)
+			grid-template-columns: repeat(2, 1fr)
+		@media (min-width: 1400px)
+			grid-template-columns: repeat(4, 1fr)
+		& .item
+			height: 350px
+			display: flex
+			flex-direction: column
+			justify-content: center
+			row-gap: 20px
+			border: 1px solid #f3f3f3
+			padding: 30px
+			border-radius: 10px
+			& .param
+				display: flex
+				flex-direction: column
+				align-items: center
+				& span:first-child
+					font-size: 22px
+					font-weight: 600
+					margin-bottom: 3px
+		& img, & svg
+			max-height: 70px
+
+.list-banks
+	display: grid
+	gap: 30px
+	margin-bottom: 30px
+	@media (min-width: 768px)
+		gap: 50px
+		grid-template-columns: repeat(1, 1fr)
+		justify-content: space-between
+	@media (min-width: 992px)
+		grid-template-columns: repeat(3, 1fr)
+	@media (min-width: 1400px)
+		grid-template-columns: repeat(4, 1fr)
+	& a
+		color: #282828
+	& .item
+		border: 1px solid #dedede
+		border-radius: 10px
+		padding: 30px
+		transition: all 0.3s ease
+		display: flex
+		flex-direction: column
+		row-gap: 30px
+		position: relative
+		& .license
+			font-size: 12px
+			color: #999
+		& .banks-name
+			display: flex
+			flex-direction: column
+		& .bank-logo
+			height: 50px
+			width: 50px
+			transition: background-color 0.3s ease
+			fill: #282828
+			position: absolute
+			bottom: 30px
+			right: 30px
+			&.sber
+				fill: #21A038
+			&.vtb
+				fill: #009FDF
+			&.alfa
+				fill: #EF3124
+			&.open
+				fill: #00BEF0
+		& .banks-program, & .banks-percent
+			display: flex
+			flex-direction: column
+			span:first-child
+				color: #999
+				font-size: 12px
+			span:last-child
+				font-weight: 600
+				font-size: 18px
+		&:hover
+			cursor: pointer
+			border: 1px solid #f7f7f7
+			background-color: #f7f7f7
+
+.list-documents
+	display: grid
+	gap: 30px
+	@media (min-width: 768px)
+		gap: 50px
+		grid-template-columns: repeat(auto-fill, minmax(calc(50% - 50px), 1fr))
+		justify-content: space-between
+	@media (min-width: 1200px)
+		grid-template-columns: repeat(auto-fill, minmax(calc(33.3% - 50px), 1fr))
+
+	& .item
+		background-color: #f9f9f9
+		border-radius: 10px
+		padding: 30px
+		transition: all 0.3s ease
+		display: flex
+		flex-direction: column
+		height: 300px
+		justify-content: space-between
+		color: #282828
+
+		& .info
+			font-size: 13px
+			color: #c2c2c2
+			display: flex
+			flex-direction: column
+			row-gap: 20px
+
+		& .name
+			display: flex
+			gap: 20px
+			align-items: baseline
+			@media (min-width: 1200px)
+				gap: 30px
+
+			& span
+				font-size: 20px
+				width: 100%
+				@media (min-width: 1200px)
+					font-size: 22px
+
+			& svg
+				position: relative
+				top: 2px
+				width: 18px
+				height: 18px
+				fill: #e2e2e2
+				transition: fill 0.6s ease
+
+		&:hover
+			cursor: pointer
+
+			& svg
+				transition: fill 0.6s ease
+				fill: #282828
+
+.list-projects-block
+
+	& .list-obj
+		& .sort
+			display: grid
+			gap: 50px
+			justify-content: space-between
+			@media (max-width: 767.98px)
+				grid-template-columns: repeat(1, 100%)
+			@media (min-width: 768px)
+				grid-template-columns: repeat(2, 1fr)
+			@media (min-width: 1400px)
+				grid-template-columns: repeat(3, 1fr)
+			& .item
+				cursor: pointer
+				border-radius: 10px
+				@media (min-width: 768px)
+					max-height: 500px
+
+				& img, & video
+					width: 100%
+					height: 100%
+					object-fit: cover
+
+			& .item.inactive
+				& img, & video
+					filter: grayscale(1)
+
+.bigActiveProjectsBlock
+	position: relative
+	.dataText
+		display: flex
+		flex-direction: column
+		line-height: normal
+		margin-top: 10px
+	.text
+		display: flex
+		justify-content: space-between
+		font-weight: 600
+		.left, .right
+			padding: 10px
+			display: flex
+			flex-direction: column
+			line-height: normal
+	.none
+		background-color: #282828
+		height: 276.88px
+		border-radius: 15px
+		color: #939393
+		display: flex
+		align-items: center
+		justify-content: center
+
+.listPhotosBlock
+	.bigblock
+		margin-bottom: 150px
+		.block
+			display: flex
+			flex-wrap: wrap
+			gap: 20px
+			img
+				width: calc(100% / 3 - 14px)
+
+.smallActiveProjectsBlock
+	.container
+		display: flex
+		flex-direction: column
+		gap: 150px
+	.gapchik
+		display: flex
+		align-items: center
+		gap: 50px
+		.oproject
+			display: flex
+			flex-direction: column
+			gap: 50px
+			.dataBlock
+				display: flex
+				justify-content: space-between
+				align-items: center
+				.price
+					display: flex
+					flex-direction: column
+					text-align: right
+					.mini
+						font-size: 16px
+		img
+			max-width: 50%
+
+.anchorsBlock
+	margin: 100px 0
+	.links
+		display: flex
+		justify-content: space-between
+		a
+			color: #000
+			&:hover
+				color: red
+
+.complexBlocks
+	img
+		width: 100vw
+		@media (min-width: 1400px)
+			border-top-left-radius: 0px
+			border-top-right-radius: 0px
+
+.infrastructureBlock
+	.infrastructure
+		display: flex
+		flex-direction: column
+		row-gap: 50px
+
+	.lala
+		padding: 0 50px 0 0
+
+	.inDetail
+		.zaec
+			display: flex
+			align-items: center
+			gap: 20px
+			span:first-child
+				font-size: 50px
+				font-weight: 600
+
+.docsBlock
+	.paralambaralam
+		display: flex
+		a
+			position: relative
+			color: #000
+			-webkit-transition: all .7s ease
+			-moz-transition: all .7s ease
+			-ms-transition: all .7s ease
+			-o-transition: all .7s ease
+			transition: all .7s ease
+			margin-right: 50px
+			.alomalo
+				position: absolute
+				left: 0
+				top: 0
+				height: 100%
+				width: 100%
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+				padding: 20px
+				font-size: 14px
+				.red
+					color: #b68178
+		a:hover
+			-webkit-transform: scale(0.95)
+			-moz-transform: scale(0.95)
+			-ms-transform: scale(0.95)
+			-o-transform: scale(0.95)
+			transform: scale(0.95)
+
+.aboutBlock
+	.rb
+		position: relative
+		text-align: end
+		align-self: end
+
+		.textOnNumbers
+			position: relative
+			z-index: 1
+			font-size: 48px
+
+		.bigNumber
+			position: absolute
+			bottom: -113px
+			right: 0
+			font-size: 550px
+			color: #e0e0e0
+			line-height: normal
+			font-family: "MatthanSansNC", sans-serif
+			z-index: 0
+
+#mini-map
+	width: 100% !important
+	height: 315px !important
+	& .ymaps3x0--map-container
+		border-radius: 10px
+		& .marker
+			position: relative
+			left: -25px
+			top: -25px
+		& .ymaps3x0--marker
+			right: 0
+			left: 0
+		& .ymaps3x0--map-copyrights
+			display: none
+
+// back-to-top
+.cd-icon
+	--size: 1em
+	font-size: var(--size)
+	height: 1em
+	width: 1em
+	display: inline-block
+	color: inherit
+	fill: currentColor
+	line-height: 1
+	flex-shrink: 0
+	max-width: initial
+
+	& use
+		color: inherit
+		fill: currentColor
+
+.back-to-top
+	--size: 50px
+	width: var(--size)
+	height: var(--size)
+	display: flex
+	position: fixed
+	right: 50px
+	bottom: 50px
+	z-index: 1
+	border-radius: 50%
+	background-color: #282828
+	visibility: hidden
+	opacity: 0
+	transition: 0.2s
+
+	&:hover
+		background-color: hsl(230, 13%, 9%)
+
+	& .cd-icon
+		size: 20px
+		display: block
+		margin: auto
+		color: hsl(0, 0%, 100%)
+
+	&--is-visible
+		visibility: visible
+		opacity: 1
+
+// Подсчет / countup
+.countup
+	font-feature-settings: "tnum"
+	font-variant-numeric: tabular-nums
+	opacity: 0
+
+	&--is-visible
+		opacity: 1
+
+.cd-sr-only
+	position: absolute
+	clip: rect(1px, 1px, 1px, 1px)
+	-webkit-clip-path: inset(50%)
+	clip-path: inset(50%)
+	width: 1px
+	height: 1px
+	overflow: hidden
+	padding: 0
+	border: 0
+	white-space: nowrap
+
+.shadow
+	display: flex
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	height: 100vh
+	z-index: 99998
+	opacity: 0.5
+	background-color: #242424
+
+.menu
+	width: 100%
+	height: 100vh
+	background-color: #fff
+	position: fixed
+	top: 0
+	right: 0
+	overflow: hidden
+	z-index: 99999
+	@media (min-width: 768px)
+		width: 400px
+	.x
+		width: 20px
+		height: auto
+		position: absolute
+		top: 30px
+		right: 30px
+		cursor: pointer
+		color: #fff
+		z-index: 99999
+	.buba
+		box-sizing: border-box
+		padding: 58px 40px 38px
+		position: relative
+		height: auto
+		min-height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		.logotipe
+			margin-bottom: 50px
+			@include user-select
+			.pobedonoscev, .group
+				font-size: 40px
+		& a
+			color: #323232
+			font-size: 22px
+			font-weight: 500
+			text-transform: uppercase
+			line-height: 1.8
+			&:hover
+				font-weight: 600
+
+.form-check
+	@include user-select
+
+// Отключаем лишнее в Битрикс24
+.b24-window-close
+	width: 0px !important
+	height: 30px !important
+	opacity: 1 !important
+form > div
+	display: block
+	gap: 20px
+	flex-grow: 1
+.b24-form-sign, .b24-form-header-padding
+	display: none !important
+.b24-form-padding-side
+	padding: 0 !important
+.b24-form-success-icon
+	width: 80px !important
+	height: 80px !important
+
+// МОБИЛЬНАЯ ВЕРСИЯ
+@media (max-width: 766px)
+// body
+// 	#index
+// 		height: 100vh
+
+// 		& .wide-button
+// 			width: fit-content
+// 			margin: 0px 30px
+// 			background-color: #f3f3f3
+// 			padding: 10px 15px
+// 			border-radius: 10px
+// 			& svg
+// 				margin-left: 5px
+// 				width: 14px
+// 				height: 14px
+// 				color: #000
+// 				fill: #282828
+
+// 		& .glass-button
+// 			position: relative
+// 			width: max-content
+// 			margin: 0 30px
+// 			padding: 15px 20px
+// 			border-radius: 15px
+// 			background-color: rgba(255, 255, 255, 0.1)
+// 			border: 1px solid rgba(255, 255, 255, 0.1)
+// 			backdrop-filter: blur(3px)
+// 			color: rgba(255, 255, 255, 0.9)
+// 			& svg
+// 				margin-left: 5px
+// 				width: 14px
+// 				height: 14px
+// 				color: #fff
+// 				fill: #fff
+
+.construction-progress
+	position: relative
+	width: 100%
+	height: calc( 100vw - 60px )
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	overflow: hidden
+	@media (min-width: 992px)
+		height: auto
+
+	& .image
+		width: 100%
+		height: 100%
+		object-fit: cover
+		filter: brightness(0.7)
+
+	& .date
+		bottom: 20px
+		left: 20px
+		@media (min-width: 768px)
+			bottom: 30px
+			left: 30px
+		@media (min-width: 992px)
+			bottom: 50px
+			left: 50px
+
+	& .lr
+		bottom: 20px
+		right: 20px
+		& svg
+			fill: #fff
+		@media (min-width: 768px)
+			bottom: 30px
+			right: 30px
+		@media (min-width: 992px)
+			bottom: 50px
+			right: 50px
+
+	& .date, & .lr
+		position: absolute
+		background: none
+		color: white
+		cursor: pointer
+		display: flex
+		align-items: center
+		gap: 8px
+		@media (min-width: 768px)
+			gap: 10px
+		@media (min-width: 992px)
+			gap: 15px
+
+		& .active, & .not-active
+			border-radius: 10px
+			padding: 5px 13px
+			min-width: 30px
+			height: 30px
+			display: flex
+			align-items: center
+			justify-content: center
+			& svg
+				height: 12px
+			@media (min-width: 768px)
+				min-width: 50px
+				height: 50px
+				& svg
+					height: 15px
+
+		& .active
+			background-color: #f3f3f3
+			color: #282828
+			display: flex
+			align-items: center
+			gap: 5px
+			user-select: none
+
+		& .not-active
+			background-color: rgba(255, 255, 255, 0.3)
+			color: rgba(243, 243, 243, 0.5)
+			user-select: none
+
+	& .month, .year
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 99999
+		margin: 20px
+		display: flex
+		flex-wrap: wrap
+		gap: 10px
+		user-select: none
+		cursor: pointer
+		@media (min-width: 768px)
+			margin: 30px
+		@media (min-width: 992px)
+			margin: 50px
+			gap: 15px
+
+		& span
+			padding: 5px 13px
+			background-color: #f3f3f3
+			border-radius: 10px
+			@media (min-width: 768px)
+				min-width: 50px
+				height: 50px
+				display: flex
+				align-items: center
+				justify-content: center
+
+.planchik
+	margin: 0
+	@media (max-width: 1399.98px)
+		display: none
+
+.b-block
+	display: flex
+	align-items: center
+	flex-direction: column
+	justify-content: space-between
+	gap: 50px
+	margin-bottom: 50px
+	& .plans
+		display: flex
+		justify-content: end
+	& .neplans
+		max-width: 80%
+
+.c-block
+	display: flex
+	align-items: center
+	justify-content: space-between
+	margin-bottom: 50px
+
+.podezdy
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	border: 1px solid #dedede
+	border-radius: 10px
+	padding: 30px
+	height: 250px
+
+	& .list
+		display: flex
+		text-align: end
+		flex-direction: column
+
+	& .other
+		flex-grow: 1
+
+.a-block
+	display: grid
+	gap: 50px
+	margin-bottom: 50px
+	grid-template-columns: repeat(1, 1fr)
+	@media (min-width: 768px)
+		grid-template-columns: repeat(2, 1fr)
+	@media (min-width: 1400px)
+		grid-template-columns: repeat(3, 1fr)
+	& .area-apartment
+		height: 250px
+		@media (min-width: 768px)
+			grid-area: 1 / 1 / 1 / 3
+		@media (min-width: 1400px)
+			grid-area: 1 / 1 / 1 / 1
+	& .square-block
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		row-gap: 20px
+		border-radius: 10px
+		background-color: #f7f7f7
+		padding: 30px
+		height: 250px
+		& h5
+			font-size: 25px
+		& .list
+			line-height: 1.5
+			display: flex
+			flex-direction: column
+			font-size: 16px
+			text-align: end
+			& span
+				text-transform: uppercase
+
+.round-arrows
+	// width: 100%
+	gap: 15px
+	display: flex
+	justify-content: center
+	// @media (min-width: 768px)
+	// 	justify-content: end
+	& .round-arrow
+		width: 50px
+		height: 50px
+		// border-radius: 50%
+		border-radius: 10px
+		display: flex
+		align-items: center
+		justify-content: center
+		transition: background-color 0.5s ease-out
+		border: 1px solid #f3f3f3
+		&.active
+			background-color: #f7f7f7
+			border: 0
+			cursor: pointer
+			&:hover
+				background-color: #dedede
+			& svg polyline
+				stroke: #282828
+		& svg
+			width: 12px
+			height: 12px
+			&.left
+				transform: rotate(-90deg)
+			&.right
+				transform: rotate(90deg)
+			& polyline
+				stroke: #f3f3f3
+
+.buy-button
+	width: 100%
+	display: flex
+	justify-content: space-between
+	gap: 30px
+	padding: 30px
+	border: 1px solid #dedede
+	border-radius: 10px
+	@media (max-width: 767.98px)
+		flex-direction: column
+	& .lines
+		font-size: 20px
+		text-transform: uppercase
+		& .line
+			display: flex
+			gap: 10px
+
+// блок с площадью квартиры
+.area-apartment
+	padding: 30px
+	border-radius: 10px
+	// border: 1px solid #dedede
+	background-color: #f7f7f7
+	display: flex
+	justify-content: center
+	gap: 30px
+	& .area-total
+		display: flex
+		align-items: center
+		font-family: "BebasNeue-Cyrillic", sans-serif
+		font-size: 100px
+	& .area
+		width: 120px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		row-gap: 5px
+		& .item
+			display: flex
+			justify-content: space-between
+			align-items: center
+			& span:nth-child(2)
+				background-color: #fff
+				padding: 5px 10px
+				border-radius: 5px
+
+.window-view
+	width: 100%
+	height: auto
+	& .active-entrance
+		position: relative
+		width: 100%
+		height: 100%
+	& .text
+		fill: #c7c7c7
+	& .background
+		fill: #f7f7f7
+	& .contour
+		fill: #fff
+	& .house
+		fill: #dedede
+		& .active
+			fill: #282828
+
+// общая информация
+.general-information
+	border: 1px solid #f3f3f3
+	border-radius: 10px
+	padding: 20px
+	display: flex
+	flex-direction: column
+	row-gap: 5px
+	& .line
+		display: flex
+		justify-content: space-between
+
+.general-information-mini
+	color: #282828
+	display: flex
+	gap: 20px
+	row-gap: 10px
+	font-size: 22px
+	@media (max-width: 767.98px)
+		flex-direction: column
+	@media (min-width: 1400px)
+		gap: 30px
+
+	& .line
+		display: flex
+		align-items: center
+		gap: 10px
+
+		& .general-circle
+			background-color: #f3f3f3
+			width: 40px
+			height: 40px
+			display: flex
+			align-items: center
+			justify-content: center
+			border-radius: 50%
+			@media (min-width: 1400px)
+				width: 50px
+				height: 50px
+
+.master-plan
+	position: relative
+	display: flex
+	justify-content: end
+	height: 150px
+	& svg
+		max-height: 150px
+		stroke: #282828
+		stroke-width: 0.2px
+		stroke-miterlimit: 10
+		& path.selected
+			fill: #e0e0e0
+		& path.unselected
+			fill: #f7f7f7
+	& .figure
+		font-family: "Roboto-Regular", sans-serif
+		font-size: 35px
+		fill: #242424
+		stroke-width: 0px
+	& .figure.selected
+		fill: #282828
+	& .link:hover path.unselected
+		fill: #e0e0e0 !important
+
+// описание комплекса
+.description-complex
+	transition: height 0.8s
+	margin-bottom: 30px
+	& #text
+		margin-bottom: 10px
+		height: 60px
+		overflow: hidden
+	& button
+		border: 0
+		color: #000
+
+// карусель c рендерами
+.renders
+	margin-bottom: 30px
+	& img
+		border-radius: 10px
+	& .owl-carousel
+		& .owl-nav
+			display: none
+		& button
+			width: auto
+
+// выбор подъезда комплекса
+.complex-block
+	@media (max-width: 1399.98px)
+		padding: 0 30px
+	.complexBlocks img
+		@media (max-width: 1399.98px)
+			border-bottom-left-radius: 0px
+			border-bottom-right-radius: 0px
+	.complex-stat
+		border: 1px solid #f3f3f3
+		border-bottom-left-radius: 10px
+		border-bottom-right-radius: 10px
+		padding: 20px
+		flex-direction: column
+		line-height: normal
+		position: relative
+		.area
+			display: flex
+			justify-content: space-around
+			align-items: center
+			margin-bottom: 20px
+			.left-block
+				display: flex
+				flex-direction: column
+				&	.num
+					font-family: "BebasNeue-Cyrillic", sans-serif
+					font-size: 70px
+					line-height: normal
+			.right-block
+				display: flex
+				flex-direction: column
+				row-gap: 5px
+				.s-data
+					display: flex
+					justify-content: flex-end
+					align-items: center
+					& span:nth-child(1)
+						margin-right: 10px
+					& span:nth-child(2)
+						background-color: #f3f3f3
+						padding: 5px 10px
+						border-radius: 5px
+
+// документация
+.diciBox
+	display: flex
+	flex-direction: column
+	border: 1px solid #f3f3f3
+	border-radius: 10px
+	margin-bottom: 30px
+
+	& a
+		color: #000
+
+	& .title
+		display: flex
+		flex-direction: column
+		flex: 1
+
+	& .line
+		display: flex
+		align-items: center
+		padding: 20px
+		&:not(:last-child)
+			border-bottom: 1px solid #f3f3f3
+
+	& .line span:nth-child(2)
+		font-weight: 600
+
+// карта с маршрутом
+.address-block
+	display: flex
+	flex-direction: column
+	position: relative
+	margin-bottom: 30px
+	& #map
+		position: relative
+		width: 100%
+		height: calc( 100vw - 40px )
+		& .ymaps-2-1-79-map, .ymaps-2-1-79-inner-panes
+			border-radius: 10px
+	& .one-button
+		position: absolute
+		bottom: 20px
+		right: 20px
+		z-index: 100500
+		background-color: #fff
+		padding: 10px
+		border-radius: 10px
+		& svg
+			height: 30px
+
+// похожие дома
+.another-house
+	background-color: #282828
+	border-radius: 10px
+	margin-bottom: 30px
+	& p
+		padding: 20px
+		color: #fff
+	& a
+		justify-content: center
+		padding: 0
+
+.about-in-number
+	display: flex
+	flex-direction: column
+	gap: 30px
+	@media (min-width: 768px)
+		flex-direction: row
+	@media (min-width: 1400px)
+		gap: 50px
+	& .item
+		width: 100%
+		height: 300px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		border: 1px solid #dedede
+		border-radius: 10px
+		font-weight: 600
+		color: #282828
+		transition: all 0.5s
+		box-sizing: border-box
+		user-select: none
+		& .top
+			display: flex
+			gap: 10px
+			align-items: baseline
+			padding: 30px
+			border-bottom: 1px solid #282828
+			font-weight: 100
+			@media (min-width: 1400px)
+				padding: 40px
+			& h3
+				transition: all 0.5s
+		& .bottom
+			display: flex
+			flex-direction: column
+			justify-content: flex-end
+			padding: 20px 30px 25px
+			font-weight: 100
+			text-align: end
+			@media (min-width: 1400px)
+				padding: 25px 40px 30px
+			& p
+				color: #c2c2c2
+
+.intro
+	margin-top: 32px
+	text-align: center
+
+.kislorod
+	display: flex
+	justify-content: space-between
+	align-items: end
+	height: 100%
+	& .list
+		display: flex
+		text-align: end
+		flex-direction: column
+
+// компас
+.compas
+	width: 70px
+	height: 70px
+
+// статус лист
+.status-list
+	display: flex
+	flex-direction: column
+	align-items: end
+	gap: 10px
+	.status
+		display: flex
+		align-items: center
+		gap: 20px
+		div
+			width: 25px
+			height: 25px
+			border-radius: 5px
+		.white
+			border: 1px solid #cfcfcf
+		.grey
+			background-color: #f3f3f3
+		.orange
+			background-color: #e9bdbd
+
+// этаж дома
+.home
+	width: 100%
+	height: 100%
+	display: flex
+	flex-direction: column
+	justify-content: end
+	align-items: flex-end
+	@include user-select
+	.roof
+		width: 100px
+		display: flex
+		flex-direction: column
+		.one
+			height: 7px
+			border: 1px solid #e0e0e0
+			border-radius: 10px
+		.two
+			height: 5px
+			width: 80%
+			border-left: 1px solid #e0e0e0
+			border-right: 1px solid #e0e0e0
+			margin: 0 auto
+	.floor:nth-child(2)
+		border-top: 1px solid #dedede
+	.floor
+		width: 100px
+		font-size: 12px
+		height: 20px
+		background-color: #f7f7f7
+		border-bottom: 1px solid #dedede
+		border-left: 1px solid #dedede
+		border-right: 1px solid #dedede
+		color: #242424
+		display: flex
+		justify-content: center
+		align-items: center
+		&:hover
+			background-color: #e0e0e0
+	.floor.active
+		background-color: #e0e0e0
+		color: #282828
+
+.sharyu
+	display: flex
+	align-items: center
+	justify-content: end
+	gap: 10px
+	& .ya-share2__list.ya-share2__list_direction_horizontal
+		background-color: #f3f3f3
+		display: flex
+		gap: 10px
+		padding: 10px
+		border-radius: 10px
+		width: fit-content
+		& .ya-share2__item
+			margin: 0
+.ya-share2__item_more.ya-share2__item_has-pretty-view .ya-share2__link_more
+	border-radius: 5px !important

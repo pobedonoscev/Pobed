@@ -1,0 +1,1804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<complexes>
+	<complex>
+	
+		<id>119437</id>
+		<name>ЖК "Экогород 2"</name>
+		<latitude>57.645400</latitude>
+		<longitude>39.973450</longitude>
+		<address>Россия,Ярославская область,Ярославский район,пос. Красный Бор,квартал Экогород, д. 17</address>
+	
+		<images>
+			<image>https://xn--90acfdb1cddbd3a4d.xn--p1ai/fid/images/objects/ekogorod-2/renders/domclick/4.jpg</image>
+			<image>https://xn--90acfdb1cddbd3a4d.xn--p1ai/fid/images/objects/ekogorod-2/renders/domclick/1.jpg</image>
+			<image>https://xn--90acfdb1cddbd3a4d.xn--p1ai/fid/images/objects/ekogorod-2/renders/domclick/2.jpg</image>
+			<image>https://xn--90acfdb1cddbd3a4d.xn--p1ai/fid/images/objects/ekogorod-2/renders/domclick/3.jpg</image>
+			<image>https://xn--90acfdb1cddbd3a4d.xn--p1ai/fid/images/objects/ekogorod-2/entrance/domclick/1.jpg</image>
+			<image>https://xn--90acfdb1cddbd3a4d.xn--p1ai/fid/images/objects/ekogorod-2/entrance/domclick/2.jpg</image>
+			<image>https://xn--90acfdb1cddbd3a4d.xn--p1ai/fid/images/objects/ekogorod-2/entrance/domclick/3.jpg</image>
+		</images>
+	
+		<buildings>
+			<building>
+				<id>176866</id>
+				<fz_214>true</fz_214>
+				<name>Этап 1</name>
+				<floors>6</floors>
+				<building_state>unfinished</building_state>
+				<built_year>2025</built_year>
+				<ready_quarter>4</ready_quarter>
+				<building_type>кирпичный</building_type>
+				<!-- <ceiling_height>2.7</ceiling_height> -->
+				<!-- <cargo_lifts_count>1</cargo_lifts_count> -->
+				<flats>
+	
+					<flat>
+						<flat_id>1</flat_id>
+						<apartment>1</apartment>
+						<floor>1</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/1.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>4386150</price>
+						<area>51.3</area>
+						<living_area>16.6</living_area>
+						<kitchen_area>11.4</kitchen_area>
+						<window_view>во двор</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>2</flat_id>
+						<apartment>2</apartment>
+						<floor>1</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/2.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>4132500</price>
+						<area>47.5</area>
+						<living_area>22</living_area>
+						<kitchen_area>11.7</kitchen_area>
+						<window_view>во двор</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>4</flat_id>
+						<apartment>4</apartment>
+						<floor>1</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/4.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>3675000</price>
+						<area>42</area>
+						<living_area>20.2</living_area>
+						<kitchen_area>9.4</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>6</flat_id>
+						<apartment>6</apartment>
+						<floor>1</floor>
+						<room>3</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/6.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>7511500</price>
+						<area>90.5</area>
+						<living_area>43.5</living_area>
+						<kitchen_area>14.2</kitchen_area>
+						<window_view>во двор и на улицу</window_view>
+						<bathroom>раздельный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>11</flat_id>
+						<apartment>11</apartment>
+						<floor>2</floor>
+						<room>2</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/11.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>5522400</price>
+						<area>62.4</area>
+						<living_area>30.7</living_area>
+						<kitchen_area>10.8</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>раздельный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>13</flat_id>
+						<apartment>13</apartment>
+						<floor>3</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/13.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>4452840</price>
+						<area>51.3</area>
+						<living_area>16.6</living_area>
+						<kitchen_area>11.4</kitchen_area>
+						<window_view>во двор</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>19</flat_id>
+						<apartment>19</apartment>
+						<floor>4</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/19.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>4452840</price>
+						<area>51.3</area>
+						<living_area>16.6</living_area>
+						<kitchen_area>11.4</kitchen_area>
+						<window_view>во двор</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>25</flat_id>
+						<apartment>25</apartment>
+						<floor>5</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/25.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>4452840</price>
+						<area>51.3</area>
+						<living_area>16.6</living_area>
+						<kitchen_area>11.4</kitchen_area>
+						<window_view>во двор</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>34</flat_id>
+						<apartment>34</apartment>
+						<floor>6</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/34.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>3864000</price>
+						<area>42</area>
+						<living_area>20.2</living_area>
+						<kitchen_area>9.4</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>37</flat_id>
+						<apartment>37</apartment>
+						<floor>1</floor>
+						<room>2</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/37.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>5826600</price>
+						<area>70.2</area>
+						<living_area>33.7</living_area>
+						<kitchen_area>13.3</kitchen_area>
+						<window_view>во двор и на улицу</window_view>
+						<bathroom>раздельный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>38</flat_id>
+						<apartment>38</apartment>
+						<floor>1</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/38.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>4351600</price>
+						<area>50.6</area>
+						<living_area>18.6</living_area>
+						<kitchen_area>11.9</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>39</flat_id>
+						<apartment>39</apartment>
+						<floor>1</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/39.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>4249350</price>
+						<area>49.7</area>
+						<living_area>19.1</living_area>
+						<kitchen_area>12.5</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>41</flat_id>
+						<apartment>41</apartment>
+						<floor>1</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/41.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3704800</price>
+						<area>42.1</area>
+						<living_area>16.4</living_area>
+						<kitchen_area>11.8</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>42</flat_id>
+						<apartment>42</apartment>
+						<floor>1</floor>
+						<room>3</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/42.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>7428500</price>
+						<area>89.5</area>
+						<living_area>51.2</living_area>
+						<kitchen_area>13</kitchen_area>
+						<window_view>во двор и на улицу</window_view>
+						<bathroom>раздельный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>45</flat_id>
+						<apartment>45</apartment>
+						<floor>2</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/45.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>4348750</price>
+						<area>49.7</area>
+						<living_area>19.1</living_area>
+						<kitchen_area>12.5</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>46</flat_id>
+						<apartment>46</apartment>
+						<floor>2</floor>
+						<room>2</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/46.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>6178900</price>
+						<area>67.9</area>
+						<living_area>38.5</living_area>
+						<kitchen_area>11.7</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>раздельный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>47</flat_id>
+						<apartment>47</apartment>
+						<floor>2</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/47.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3789000</price>
+						<area>42.1</area>
+						<living_area>16.4</living_area>
+						<kitchen_area>11.8</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>48</flat_id>
+						<apartment>48</apartment>
+						<floor>2</floor>
+						<room>3</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/48.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>8144500</price>
+						<area>89.5</area>
+						<living_area>51.2</living_area>
+						<kitchen_area>13</kitchen_area>
+						<window_view>во двор и на улицу</window_view>
+						<bathroom>раздельный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>53</flat_id>
+						<apartment>53</apartment>
+						<floor>3</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/53.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3789000</price>
+						<area>42.1</area>
+						<living_area>16.4</living_area>
+						<kitchen_area>11.8</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>59</flat_id>
+						<apartment>59</apartment>
+						<floor>4</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/59.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3789000</price>
+						<area>42.1</area>
+						<living_area>16.4</living_area>
+						<kitchen_area>11.8</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>62</flat_id>
+						<apartment>62</apartment>
+						<floor>5</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/62.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>4452800</price>
+						<area>50.6</area>
+						<living_area>18.6</living_area>
+						<kitchen_area>11.9</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>63</flat_id>
+						<apartment>63</apartment>
+						<floor>5</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/63.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>4348750</price>
+						<area>49.7</area>
+						<living_area>19.1</living_area>
+						<kitchen_area>12.5</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>64</flat_id>
+						<apartment>64</apartment>
+						<floor>5</floor>
+						<room>2</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/64.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>6178900</price>
+						<area>67.9</area>
+						<living_area>38.5</living_area>
+						<kitchen_area>11.7</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>раздельный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>65</flat_id>
+						<apartment>65</apartment>
+						<floor>5</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/65.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3789000</price>
+						<area>42.1</area>
+						<living_area>16.4</living_area>
+						<kitchen_area>11.8</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>68</flat_id>
+						<apartment>68</apartment>
+						<floor>6</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/68.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>4402200</price>
+						<area>50.6</area>
+						<living_area>18.6</living_area>
+						<kitchen_area>11.9</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>69</flat_id>
+						<apartment>69</apartment>
+						<floor>6</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/69.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>4348750</price>
+						<area>49.7</area>
+						<living_area>19.1</living_area>
+						<kitchen_area>12.5</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>71</flat_id>
+						<apartment>71</apartment>
+						<floor>6</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/71.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3746900</price>
+						<area>42.1</area>
+						<living_area>16.4</living_area>
+						<kitchen_area>11.8</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>73</flat_id>
+						<apartment>73</apartment>
+						<floor>1</floor>
+						<room>2</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/73.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>5508800</price>
+						<area>62.6</area>
+						<living_area>32.6</living_area>
+						<kitchen_area>12.3</kitchen_area>
+						<window_view>во двор и на улицу</window_view>
+						<bathroom>раздельный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>74</flat_id>
+						<apartment>74</apartment>
+						<floor>1</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/74.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3792800</price>
+						<area>43.1</area>
+						<living_area>16.9</living_area>
+						<kitchen_area>12</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>75</flat_id>
+						<apartment>75</apartment>
+						<floor>1</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/75.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3792800</price>
+						<area>43.1</area>
+						<living_area>16.9</living_area>
+						<kitchen_area>12</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>76</flat_id>
+						<apartment>76</apartment>
+						<floor>1</floor>
+						<room>2</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/76.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>5491200</price>
+						<area>62.4</area>
+						<living_area>30.6</living_area>
+						<kitchen_area>13.4</kitchen_area>
+						<window_view>во двор и на улицу</window_view>
+						<bathroom>раздельный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>77</flat_id>
+						<apartment>77</apartment>
+						<floor>2</floor>
+						<room>2</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/77.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>5571400</price>
+						<area>62.6</area>
+						<living_area>32.6</living_area>
+						<kitchen_area>12.3</kitchen_area>
+						<window_view>во двор и на улицу</window_view>
+						<bathroom>раздельный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>78</flat_id>
+						<apartment>78</apartment>
+						<floor>2</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/78.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3835900</price>
+						<area>43.1</area>
+						<living_area>16.9</living_area>
+						<kitchen_area>12</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>79</flat_id>
+						<apartment>79</apartment>
+						<floor>2</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/79.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3835900</price>
+						<area>43.1</area>
+						<living_area>16.9</living_area>
+						<kitchen_area>12</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>80</flat_id>
+						<apartment>80</apartment>
+						<floor>2</floor>
+						<room>2</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/80.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>5553600</price>
+						<area>62.4</area>
+						<living_area>30.6</living_area>
+						<kitchen_area>13.4</kitchen_area>
+						<window_view>во двор и на улицу</window_view>
+						<bathroom>раздельный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>82</flat_id>
+						<apartment>82</apartment>
+						<floor>3</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/82.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3835900</price>
+						<area>43.1</area>
+						<living_area>16.9</living_area>
+						<kitchen_area>12</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>83</flat_id>
+						<apartment>83</apartment>
+						<floor>3</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/83.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3835900</price>
+						<area>43.1</area>
+						<living_area>16.9</living_area>
+						<kitchen_area>12</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>85</flat_id>
+						<apartment>85</apartment>
+						<floor>4</floor>
+						<room>2</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/85.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>5571400</price>
+						<area>62.6</area>
+						<living_area>32.6</living_area>
+						<kitchen_area>12.3</kitchen_area>
+						<window_view>во двор и на улицу</window_view>
+						<bathroom>раздельный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>86</flat_id>
+						<apartment>86</apartment>
+						<floor>4</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/86.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3835900</price>
+						<area>43.1</area>
+						<living_area>16.9</living_area>
+						<kitchen_area>12</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>87</flat_id>
+						<apartment>87</apartment>
+						<floor>4</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/87.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3835900</price>
+						<area>43.1</area>
+						<living_area>16.9</living_area>
+						<kitchen_area>12</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>88</flat_id>
+						<apartment>88</apartment>
+						<floor>4</floor>
+						<room>2</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/88.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>5553600</price>
+						<area>62.4</area>
+						<living_area>30.6</living_area>
+						<kitchen_area>13.4</kitchen_area>
+						<window_view>во двор и на улицу</window_view>
+						<bathroom>раздельный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>89</flat_id>
+						<apartment>89</apartment>
+						<floor>5</floor>
+						<room>2</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/89.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>5571400</price>
+						<area>62.6</area>
+						<living_area>32.6</living_area>
+						<kitchen_area>12.3</kitchen_area>
+						<window_view>во двор и на улицу</window_view>
+						<bathroom>раздельный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>90</flat_id>
+						<apartment>90</apartment>
+						<floor>5</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/90.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3835900</price>
+						<area>43.1</area>
+						<living_area>16.9</living_area>
+						<kitchen_area>12</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>91</flat_id>
+						<apartment>91</apartment>
+						<floor>5</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/91.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3835900</price>
+						<area>43.1</area>
+						<living_area>16.9</living_area>
+						<kitchen_area>12</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>93</flat_id>
+						<apartment>93</apartment>
+						<floor>6</floor>
+						<room>2</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/93.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>5571400</price>
+						<area>62.6</area>
+						<living_area>32.6</living_area>
+						<kitchen_area>12.3</kitchen_area>
+						<window_view>во двор и на улицу</window_view>
+						<bathroom>раздельный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>94</flat_id>
+						<apartment>94</apartment>
+						<floor>6</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/94.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3835900</price>
+						<area>43.1</area>
+						<living_area>16.9</living_area>
+						<kitchen_area>12</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>95</flat_id>
+						<apartment>95</apartment>
+						<floor>6</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/95.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3835900</price>
+						<area>43.1</area>
+						<living_area>16.9</living_area>
+						<kitchen_area>12</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>96</flat_id>
+						<apartment>96</apartment>
+						<floor>6</floor>
+						<room>2</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/96.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>5553600</price>
+						<area>62.4</area>
+						<living_area>30.6</living_area>
+						<kitchen_area>13.4</kitchen_area>
+						<window_view>во двор и на улицу</window_view>
+						<bathroom>раздельный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+				</flats>
+			</building>
+	
+			<building>
+				<id>176898</id>
+				<fz_214>true</fz_214>
+				<name>Этап 2</name>
+				<floors>6</floors>
+				<building_state>unfinished</building_state>
+				<built_year>2025</built_year>
+				<ready_quarter>4</ready_quarter>
+				<building_type>кирпичный</building_type>
+				<!-- <ceiling_height>2.7</ceiling_height> -->
+				<!-- <cargo_lifts_count>1</cargo_lifts_count> -->
+				<flats>
+	
+					<flat>
+						<flat_id>97</flat_id>
+						<apartment>97</apartment>
+						<floor>1</floor>
+						<room>2</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/97.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>5491200</price>
+						<area>62.4</area>
+						<living_area>30.6</living_area>
+						<kitchen_area>13.4</kitchen_area>
+						<window_view>во двор и на улицу</window_view>
+						<bathroom>раздельный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>98</flat_id>
+						<apartment>98</apartment>
+						<floor>1</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/98.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3792800</price>
+						<area>43.1</area>
+						<living_area>16.9</living_area>
+						<kitchen_area>12</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>99</flat_id>
+						<apartment>99</apartment>
+						<floor>1</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/99.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3792800</price>
+						<area>43.1</area>
+						<living_area>16.9</living_area>
+						<kitchen_area>12</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>100</flat_id>
+						<apartment>100</apartment>
+						<floor>1</floor>
+						<room>2</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/100.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>5552800</price>
+						<area>63.1</area>
+						<living_area>32.5</living_area>
+						<kitchen_area>12.3</kitchen_area>
+						<window_view>во двор и на улицу</window_view>
+						<bathroom>раздельный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>102</flat_id>
+						<apartment>102</apartment>
+						<floor>2</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/102.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3835900</price>
+						<area>43.1</area>
+						<living_area>16.9</living_area>
+						<kitchen_area>12</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>103</flat_id>
+						<apartment>103</apartment>
+						<floor>2</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/103.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3835900</price>
+						<area>43.1</area>
+						<living_area>16.9</living_area>
+						<kitchen_area>12</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>104</flat_id>
+						<apartment>104</apartment>
+						<floor>2</floor>
+						<room>2</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/104.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>5615900</price>
+						<area>63.1</area>
+						<living_area>32.5</living_area>
+						<kitchen_area>12.3</kitchen_area>
+						<window_view>во двор и на улицу</window_view>
+						<bathroom>раздельный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>107</flat_id>
+						<apartment>107</apartment>
+						<floor>3</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/107.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3835900</price>
+						<area>43.1</area>
+						<living_area>16.9</living_area>
+						<kitchen_area>12</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>108</flat_id>
+						<apartment>108</apartment>
+						<floor>3</floor>
+						<room>2</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/108.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>5615900</price>
+						<area>63.1</area>
+						<living_area>32.5</living_area>
+						<kitchen_area>12.3</kitchen_area>
+						<window_view>во двор и на улицу</window_view>
+						<bathroom>раздельный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>109</flat_id>
+						<apartment>109</apartment>
+						<floor>4</floor>
+						<room>2</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/109.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>5553600</price>
+						<area>62.4</area>
+						<living_area>30.6</living_area>
+						<kitchen_area>13.4</kitchen_area>
+						<window_view>во двор и на улицу</window_view>
+						<bathroom>раздельный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>110</flat_id>
+						<apartment>110</apartment>
+						<floor>4</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/110.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3835900</price>
+						<area>43.1</area>
+						<living_area>16.9</living_area>
+						<kitchen_area>12</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>111</flat_id>
+						<apartment>111</apartment>
+						<floor>4</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/111.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3835900</price>
+						<area>43.1</area>
+						<living_area>16.9</living_area>
+						<kitchen_area>12</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>114</flat_id>
+						<apartment>114</apartment>
+						<floor>5</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/114.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3835900</price>
+						<area>43.1</area>
+						<living_area>16.9</living_area>
+						<kitchen_area>12</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>115</flat_id>
+						<apartment>115</apartment>
+						<floor>5</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/115.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3835900</price>
+						<area>43.1</area>
+						<living_area>16.9</living_area>
+						<kitchen_area>12</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>117</flat_id>
+						<apartment>117</apartment>
+						<floor>6</floor>
+						<room>2</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/117.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>5553600</price>
+						<area>62.4</area>
+						<living_area>30.6</living_area>
+						<kitchen_area>13.4</kitchen_area>
+						<window_view>во двор и на улицу</window_view>
+						<bathroom>раздельный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>118</flat_id>
+						<apartment>118</apartment>
+						<floor>6</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/118.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3835900</price>
+						<area>43.1</area>
+						<living_area>16.9</living_area>
+						<kitchen_area>12</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>119</flat_id>
+						<apartment>119</apartment>
+						<floor>6</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/119.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3835900</price>
+						<area>43.1</area>
+						<living_area>16.9</living_area>
+						<kitchen_area>12</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>120</flat_id>
+						<apartment>120</apartment>
+						<floor>6</floor>
+						<room>2</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/120.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>5615900</price>
+						<area>63.1</area>
+						<living_area>32.5</living_area>
+						<kitchen_area>12.3</kitchen_area>
+						<window_view>во двор и на улицу</window_view>
+						<bathroom>раздельный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>121</flat_id>
+						<apartment>121</apartment>
+						<floor>1</floor>
+						<room>3</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/121.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>7478300</price>
+						<area>90.1</area>
+						<living_area>51.2</living_area>
+						<kitchen_area>13</kitchen_area>
+						<window_view>во двор и на улицу</window_view>
+						<bathroom>раздельный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>122</flat_id>
+						<apartment>122</apartment>
+						<floor>1</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/122.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3740000</price>
+						<area>42.5</area>
+						<living_area>16.4</living_area>
+						<kitchen_area>12.1</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>123</flat_id>
+						<apartment>123</apartment>
+						<floor>1</floor>
+						<room>2</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/123.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>5992800</price>
+						<area>68.1</area>
+						<living_area>35.5</living_area>
+						<kitchen_area>13.1</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>раздельный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>124</flat_id>
+						<apartment>124</apartment>
+						<floor>1</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/124.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>4368800</price>
+						<area>50.8</area>
+						<living_area>18.4</living_area>
+						<kitchen_area>12.3</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>128</flat_id>
+						<apartment>128</apartment>
+						<floor>2</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/128.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>4394200</price>
+						<area>50.8</area>
+						<living_area>18.4</living_area>
+						<kitchen_area>12.3</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>134</flat_id>
+						<apartment>134</apartment>
+						<floor>4</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/134.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3782500</price>
+						<area>42.5</area>
+						<living_area>16.4</living_area>
+						<kitchen_area>12.1</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>138</flat_id>
+						<apartment>138</apartment>
+						<floor>5</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/138.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3782500</price>
+						<area>42.5</area>
+						<living_area>16.4</living_area>
+						<kitchen_area>12.1</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>140</flat_id>
+						<apartment>140</apartment>
+						<floor>5</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/140.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>4394200</price>
+						<area>50.8</area>
+						<living_area>18.4</living_area>
+						<kitchen_area>12.3</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>141</flat_id>
+						<apartment>141</apartment>
+						<floor>6</floor>
+						<room>3</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/141.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>7748600</price>
+						<area>90.1</area>
+						<living_area>51.2</living_area>
+						<kitchen_area>13</kitchen_area>
+						<window_view>во двор и на улицу</window_view>
+						<bathroom>раздельный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>142</flat_id>
+						<apartment>142</apartment>
+						<floor>6</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/142.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>балкон</balcony>
+						<renovation>да</renovation>
+						<price>3782500</price>
+						<area>42.5</area>
+						<living_area>16.4</living_area>
+						<kitchen_area>12.1</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>144</flat_id>
+						<apartment>144</apartment>
+						<floor>6</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/144.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>4394200</price>
+						<area>50.8</area>
+						<living_area>18.4</living_area>
+						<kitchen_area>12.3</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>145</flat_id>
+						<apartment>145</apartment>
+						<floor>1</floor>
+						<room>2</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/145.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>5491200</price>
+						<area>62.4</area>
+						<living_area>29.5</living_area>
+						<kitchen_area>15.8</kitchen_area>
+						<window_view>во двор и на улицу</window_view>
+						<bathroom>раздельный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>146</flat_id>
+						<apartment>146</apartment>
+						<floor>1</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/146.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>4274550</price>
+						<area>48.3</area>
+						<living_area>20</living_area>
+						<kitchen_area>11.5</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>147</flat_id>
+						<apartment>147</apartment>
+						<floor>1</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/147.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>4274550</price>
+						<area>48.3</area>
+						<living_area>20</living_area>
+						<kitchen_area>11.5</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>151</flat_id>
+						<apartment>151</apartment>
+						<floor>2</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/151.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>4347000</price>
+						<area>48.3</area>
+						<living_area>20</living_area>
+						<kitchen_area>11.5</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>152</flat_id>
+						<apartment>152</apartment>
+						<floor>2</floor>
+						<room>2</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/152.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>5660200</price>
+						<area>62.2</area>
+						<living_area>30.8</living_area>
+						<kitchen_area>13.4</kitchen_area>
+						<window_view>во двор и на улицу</window_view>
+						<bathroom>раздельный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>163</flat_id>
+						<apartment>163</apartment>
+						<floor>5</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/163.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>4347000</price>
+						<area>48.3</area>
+						<living_area>20</living_area>
+						<kitchen_area>11.5</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>166</flat_id>
+						<apartment>166</apartment>
+						<floor>6</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/166.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>4347000</price>
+						<area>48.3</area>
+						<living_area>20</living_area>
+						<kitchen_area>11.5</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>167</flat_id>
+						<apartment>167</apartment>
+						<floor>6</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/167.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>4347000</price>
+						<area>48.3</area>
+						<living_area>20</living_area>
+						<kitchen_area>11.5</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>169</flat_id>
+						<apartment>169</apartment>
+						<floor>1</floor>
+						<room>2</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/169.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>5544700</price>
+						<area>62.3</area>
+						<living_area>30.8</living_area>
+						<kitchen_area>13.4</kitchen_area>
+						<window_view>во двор и на улицу</window_view>
+						<bathroom>раздельный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>172</flat_id>
+						<apartment>172</apartment>
+						<floor>1</floor>
+						<room>2</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/172.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>5562500</price>
+						<area>62.5</area>
+						<living_area>30.4</living_area>
+						<kitchen_area>13.6</kitchen_area>
+						<window_view>во двор и на улицу</window_view>
+						<bathroom>раздельный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+					<flat>
+						<flat_id>187</flat_id>
+						<apartment>187</apartment>
+						<floor>5</floor>
+						<room>1</room>
+						<plan>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/objects/ekogorod-2/plans/flat/1/187.png</plan>
+						<!-- <ceiling_height>2.7</ceiling_height> -->
+						<balcony>лоджия</balcony>
+						<renovation>да</renovation>
+						<price>3993600</price>
+						<area>41.6</area>
+						<living_area>16.9</living_area>
+						<kitchen_area>12</kitchen_area>
+						<window_view>на улицу</window_view>
+						<bathroom>совмещенный</bathroom>
+						<housing_type>0</housing_type>
+						<ready_housing>1</ready_housing>
+					</flat>
+		
+				</flats>
+			</building>
+		</buildings>
+		<description_main>
+			<title>Жилой комплекс Экогород 2</title>
+			<text>Экогород 2 - это продолжение нашумевшего проекта жилого квартала Экогород. Он непосредственно прилегает к территории квартала, одной стороной будет выходить также на сосновый массив. Шестиэтажный жилой дом, будет выполнен в лучших традициях нашей компании. Несущие стены из керамического кирпича, авторское благоустройство и облицовка натуральным камнем из карьеров Дагестана.,Сделайте глубокий вдох, потому что сейчас мы расскажем вам о месте, где сбываются самые заветные мечты о комфортной жизни. Запустите воображение и представьте себе жизнь, наполненную эмоциями, красотой и удовольствием от каждого мгновения. Экогород 2 – это не просто новый жилой комплекс - это продолжение легендарного экологического проекта. Этот дом станет еще одним шедевром архитектуры, воплощающим высокие стандарты качества и комфорта для будущих жильцов.</text>
+		</description_main>
+	
+		<infrastructure>
+			<parking>наземная</parking>
+			<security>false</security>
+			<fenced_area>true</fenced_area>
+			<sports_ground>true</sports_ground>
+			<playground>true</playground>
+			<school>false</school>
+			<kindergarten>false</kindergarten>
+		</infrastructure>
+	
+		<sales_info>
+			<sales_phone>+74852333362</sales_phone>
+			<sales_address>г. Ярославль, пл. Труда, д. 1, оф. 605</sales_address>
+			<sales_latitude>39.866307</sales_latitude>
+			<sales_longitude>57.627234</sales_longitude>
+			<timezone>+3</timezone>
+			<work_days>
+	
+				<work_day>
+					<day>пн</day>
+					<open_at>09:00</open_at>
+					<close_at>18:00</close_at>
+				</work_day>
+		
+				<work_day>
+					<day>вт</day>
+					<open_at>09:00</open_at>
+					<close_at>18:00</close_at>
+				</work_day>
+		
+				<work_day>
+					<day>ср</day>
+					<open_at>09:00</open_at>
+					<close_at>18:00</close_at>
+				</work_day>
+		
+				<work_day>
+					<day>чт</day>
+					<open_at>09:00</open_at>
+					<close_at>18:00</close_at>
+				</work_day>
+		
+				<work_day>
+					<day>пт</day>
+					<open_at>09:00</open_at>
+					<close_at>18:00</close_at>
+				</work_day>
+		
+				<work_day>
+					<day>сб</day>
+					<open_at>выходной</open_at>
+					<close_at>undefined</close_at>
+				</work_day>
+		
+				<work_day>
+					<day>вс</day>
+					<open_at>выходной</open_at>
+					<close_at>undefined</close_at>
+				</work_day>
+		
+			</work_days>
+		</sales_info>
+	
+		<developer>
+			<id>320197</id>
+			<name>Застройщик</name>
+			<phone>+74852333362</phone>
+			<site>победоносцев.рф</site>
+			<logo>https://xn--90acfdb1cddbd3a4d.xn--p1ai/assets/images/logo.svg</logo>
+		</developer>
+	
+	</complex>
+</complexes>
+	
